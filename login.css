@@ -1,0 +1,137 @@
+*{
+    top:0;
+    left:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    width:100vw;
+    background-image: linear-gradient( to right,#b2b8f1 60%,#0d2fa8 40%);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    padding: 4% 0px 0px 7% ;
+}
+
+.heading{
+    color:#0c46a1;
+}
+
+.heading a{
+    color:#0d57cd;
+}
+
+.login{
+    margin-top: 8%;
+}
+
+.login-title a{
+    color: #686c8e;    
+}
+
+form{
+    margin-top: 3%;
+    width: 55%;
+   display: flex;
+   flex-direction: column;
+}
+
+form>*{
+    margin-bottom: 3%;
+}
+
+.forrem-cont{
+    width: 90%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forrem-cont a{
+    text-decoration: none;
+    color: #686c8e;
+}
+
+#username,#password,#login{
+    width: 90%;
+    height: 50px;
+}
+
+.pwd{
+    position: relative;
+}
+
+.eye{
+    position:absolute;
+    top: 16.6px;
+    left: calc(90% - 40px);
+}
+
+.remember{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+#remMe{
+    accent-color: #511077;
+}
+
+#username,#password{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    box-shadow: 2px 2px 5px rgba(25, 25, 25, 0.184) inset;
+    background-color: #0c45a100;
+    padding-left: 30px;
+}
+
+#username:focus,#password:focus,#login:focus{
+    outline: none;
+}
+
+#login{
+    background-color: #0d2fa8;
+    color: white;
+    box-shadow: none;
+    font-weight: 700;
+    border-style: none;
+    font-size: 1.2rem;
+}
+
+
+.images{
+    width: 100vw;
+}
+
+
+.bottle{
+    position: absolute;
+    height: 294px;
+    width: 294px;
+    left:45.9%;
+    z-index: -1;
+}
+
+@media only screen and (max-width:600px) {
+    .images{
+        height: 200px;
+        background-color: #0d2fa8;
+    }
+    form{
+        width: 100%;
+    }
+    body{
+        background-image: none;
+        background-color: #b2b8f1;
+    }
+}
